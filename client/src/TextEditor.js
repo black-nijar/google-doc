@@ -8,7 +8,7 @@ const TextEditor = () => {
     wrapper.innerHTML = "";
     const editor = document.createElement("div");
     wrapper.append(editor);
-    new Quill("#container", { theme: "snow" });
+    new Quill(editor, { theme: "snow" });
   }, []);
   return <div className="container" ref={wrapperRef}></div>;
 };
