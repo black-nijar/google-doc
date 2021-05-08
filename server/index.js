@@ -1,15 +1,12 @@
 const mongoose = require("mongoose");
 const Document = require("./schema");
 
-mongoose.connect(
-  "mongodb+srv://google:google@cluster0.9bj5f.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useFindAndModify: false,
-    useCreateIndex: true,
-  }
-);
+mongoose.connect("", {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useFindAndModify: false,
+  useCreateIndex: true,
+});
 
 const io = require("socket.io")(3001, {
   cors: {
